@@ -410,6 +410,12 @@ h1:hover {
   display: block;
   filter: brightness(70%);
   border-radius: 40px;
+
+  backdrop-filter: blur(5px) contrast(120%) saturate(120%);
+}
+
+.ground:hover .ground-img {
+  transition-duration: 300ms;
 }
 
 .block-of-4 .text-holeder {
