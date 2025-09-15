@@ -1,13 +1,21 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
   border: 0;
 
+  /* overflow: hidden; */
+
   font-family: "Libertinus Serif Display", serif;
+
+  background-color: #ececec;
 }
 
-.maket-form {
-}
+/* .maket-form {
+} */
 
 .background2 {
   margin: 43px;
@@ -25,6 +33,49 @@ body {
   background-repeat: no-repeat;
 
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.text-header {
+  margin-top: 30px;
+  position: absolute;
+
+  align-self: flex-start;
+  height: 100px;
+  width: 650px;
+
+  margin-top: 30px;
+
+  background-color: rgba(233, 233, 233, 0);
+
+  border-radius: 25px;
+
+  box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.5);
+
+  color: rgba(255, 255, 255, 0.712);
+
+  transition-duration: 300ms;
+}
+
+.text-header h2 {
+  font-size: 45px;
+  text-align: center;
+
+  transition-duration: 300ms;
+}
+
+.text-header:hover {
+  height: 130px;
+  width: 800px;
+
+  transition-duration: 300ms;
+
+  color: rgba(255, 255, 255, 0.712);
+  backdrop-filter: blur(5px) contrast(120%) saturate(120%);
+}
+
+.text-header:hover h2 {
+  font-size: 55px;
+  transition-duration: 300ms;
 }
 
 .background {
@@ -46,7 +97,7 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-h1 {
+/* h1 {
   font-family: "Libertinus Serif Display", serif;
 
   letter-spacing: 20px;
@@ -63,6 +114,36 @@ h1:hover {
 
   letter-spacing: 50px;
   transition-duration: 600ms;
+} */
+
+h1 {
+  font-family: "Libertinus Serif Display", serif;
+
+  letter-spacing: 40px;
+  margin-bottom: 440px;
+  font-size: 260px;
+  color: rgba(255, 255, 255, 0.595);
+
+  border-style: solid;
+  border-radius: 27%;
+  background-color: rgba(255, 255, 255, 0);
+  border-width: 0px;
+
+  padding: 170px 170px;
+
+  backdrop-filter: blur(5px) contrast(120%) saturate(120%);
+
+  transition-duration: 300ms;
+}
+
+h1:hover {
+  letter-spacing: 60px;
+
+  backdrop-filter: blur(0px) contrast(100%) saturate(100%);
+
+  background-color: rgba(255, 255, 255, 0);
+
+  transition-duration: 300ms;
 }
 
 .block {
@@ -71,56 +152,66 @@ h1:hover {
   background-color: rgb(236, 236, 236);
 
   margin: 43px;
+  margin-right: 60px;
   border-radius: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
-.sidebar:hover {
+/* .sidebar:hover {
   display: flex;
   position: fixed;
 
   justify-self: right;
 
   height: 1000px;
-  width: 420px;
+  width: 420px; 
   margin-top: 46px;
   margin-right: 100px;
 
+  height: 100px;
+  width: 92%;
+  margin-top: 0px;
   background-color: rgba(233, 233, 233, 0.667);
 
   border-radius: 25px;
   transition-duration: 600ms;
-}
+} */
 
 .sidebar {
   display: flex;
   position: fixed;
 
-  justify-self: right;
+  justify-self: center;
+  align-items: center;
+  height: 80px;
+  width: 92%;
+  margin-top: 20px;
 
-  height: 100px;
-  width: 115px;
-  margin-top: 46px;
-  margin-right: 100px;
+  background-color: rgba(233, 233, 233, 0.767);
 
-  background-color: rgba(233, 233, 233, 0.667);
-
-  border-radius: 25px;
-
-  transition-duration: 600ms;
+  border-radius: 27px;
 
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+
+  z-index: 10;
+
+  backdrop-filter: blur(2px) contrast(120%) saturate(120%);
+
+  transition-duration: 300ms;
 }
 
-.sidebar h2 {
-  margin-top: 100px;
+.sidebar:hover {
+  height: 110px;
+
+  transition-duration: 300ms;
 }
 
 .sidebar-buttonField {
   display: flex;
   flex-direction: row;
 
-  gap: 10px;
-  margin: 16px;
+  gap: 30px;
+  margin: 108px;
 }
 
 .sidebar-button {
@@ -132,6 +223,85 @@ h1:hover {
   background-color: rgb(212, 56, 25);
 }
 
+.side-line {
+  display: flex;
+  position: fixed;
+
+  margin-top: 67px;
+  top: 0;
+  right: 10px;
+  justify-content: center;
+  height: 90%;
+  width: 35px;
+  background-color: rgba(233, 233, 233, 0.579);
+  border-radius: 27px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  backdrop-filter: blur(2px) contrast(120%) saturate(120%);
+
+  transition-duration: 200ms;
+}
+
+.side-pointer {
+  width: 20px;
+  height: 38px;
+  margin-top: 12px;
+
+  border-radius: 27px;
+  background-color: rgba(233, 233, 233, 0.339);
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  cursor: grab;
+  z-index: 11;
+  position: relative;
+
+  transition-duration: 200ms;
+}
+
+.side-pointer:hover {
+  height: 60px;
+  width: 25px;
+
+  background-color: white;
+  transition-duration: 200ms;
+}
+
+.link-button {
+  display: flex;
+  flex-direction: row;
+
+  height: 30px;
+  align-self: center;
+  align-items: center;
+
+  border-style: solid;
+  border-radius: 27px;
+  padding: 5px 20px;
+  border-width: 2px;
+  border-color: rgba(255, 255, 255, 0);
+
+  box-shadow: 3px 7px 10px rgba(0, 0, 0, 0.3);
+  transition-duration: 200ms;
+}
+
+.link-button:hover {
+  height: 65px;
+  background-color: white;
+  transition-duration: 200ms;
+
+  color: black;
+}
+
+.link-button a {
+  text-decoration: none;
+  font-size: 29px;
+  color: rgb(255, 255, 255);
+}
+
+.link-button:hover a {
+  color: rgb(189, 189, 189);
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -140,37 +310,65 @@ h1:hover {
   gap: 60px;
 }
 
-.info-box {
-  height: 700px;
+/* .info-box {
+  height: 800px;
   width: 550px;
 
-  background-color: rgba(233, 233, 233, 0.78);
+  background-color: rgba(233, 233, 233, 0.8);
 
   border-radius: 25px;
 
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.5);
 
-  transition-duration: 600ms;
+  color: rgb(48, 48, 48);
+
+  transition-duration: 300ms;
+} */
+
+.info-box {
+  height: 800px;
+  width: 550px;
+
+  background-color: rgba(255, 255, 255, 0);
+
+  border-radius: 25px;
+
+  box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.5);
+
+  color: rgba(255, 255, 255, 0.814);
+  backdrop-filter: blur(16px) contrast(120%) saturate(120%);
+
+  transition-duration: 300ms;
 }
 
 .info-box:hover {
-  height: 700px;
-  transition-duration: 600ms;
+  background-color: rgba(255, 255, 255, 0.649);
+
+  color: black;
+  width: 600px;
+  transition-duration: 300ms;
 }
+
+/* .info-box:hover {
+  background-color: rgb(233, 233, 233);
+
+  width: 600px;
+  transition-duration: 300ms;
+} */
 
 /* text in windows*/
 .text-holder {
   margin: 26px;
 }
 .text-holder h2 {
-  font-size: 35px;
+  font-size: 37px;
   margin-bottom: 16px;
   text-align: center;
 }
 
 .text-holder p {
   padding-left: 5px;
-  font-size: 25px;
+  font-size: 27px;
   letter-spacing: 1px;
   margin: 0;
 }
@@ -181,7 +379,7 @@ h1:hover {
   grid-template-rows: repeat(2, 1fr);
   gap: 60px;
   width: 96vw;
-  height: 100vh;
+  height: 150vh;
   margin: 43px;
 }
 
@@ -195,10 +393,77 @@ h1:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
+.ground {
+  position: relative; /* важно для абсолютного позиционирования текста */
+  background-color: gray;
+  border-radius: 40px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  overflow: hidden; /* чтобы текст не вылазил за границы */
+}
+
 .ground-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  filter: brightness(70%);
   border-radius: 40px;
 }
+
+.block-of-4 .text-holeder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  width: 90%;
+}
+
+.block-of-4 .text-holeder h2 {
+  font-size: 35px;
+  margin-bottom: 16px;
+}
+
+.block-of-4 .text-holeder p {
+  padding: 0 10px;
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+/* @media (prefers-color-scheme: dark) {
+  body {
+    background: #5c5c5c;
+    color: white;
+  }
+
+  .sidebar {
+    background-color: rgba(112, 112, 112, 0.751);
+  }
+  .block {
+    background-color: #505050;
+  }
+
+  .link-button:hover {
+    background-color: rgba(73, 73, 73, 0.751);
+  }
+
+  .link-button:hover a {
+    color: white;
+  }
+
+  .info-box {
+    background-color: rgba(62, 62, 62, 0.864);
+    color: rgb(215, 215, 215);
+  }
+
+  .info-box:hover {
+    background-color: rgba(35, 35, 35, 0.864);
+  }
+
+  h1 {
+    color: rgba(86, 86, 86, 0.732);
+  }
+} */
