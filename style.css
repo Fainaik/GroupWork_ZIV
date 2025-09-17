@@ -207,6 +207,7 @@ h1:hover {
 }
 
 .sidebar-buttonField {
+  width: 100%;
   display: flex;
   flex-direction: row;
 
@@ -302,6 +303,12 @@ h1:hover {
   color: rgb(189, 189, 189);
 }
 
+.last-btn {
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
 .container {
   display: flex;
   flex-direction: row;
@@ -454,6 +461,7 @@ h1:hover {
   letter-spacing: 1px;
   margin: 0;
 }
+
 /* @media (prefers-color-scheme: dark) {
   body {
     background: #5c5c5c;
