@@ -125,7 +125,7 @@ h1 {
   color: rgba(255, 255, 255, 0.767);
 
   border-style: solid;
-  border-radius: 27%;
+  border-radius: 200px;
   background-color: rgba(255, 255, 255, 0);
   border-width: 0px;
 
@@ -308,6 +308,9 @@ h1:hover {
   display: flex;
   flex-direction: row;
   gap: 30px;
+
+  background-color: rgba(177, 177, 177, 0.616);
+  border-radius: 35px;
 }
 .container {
   display: flex;
