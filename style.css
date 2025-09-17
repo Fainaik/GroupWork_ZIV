@@ -419,6 +419,7 @@ h1:hover {
 }
 
 .block-of-4 .text-holeder {
+  padding: 10px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -426,6 +427,20 @@ h1:hover {
   color: white;
   text-align: center;
   width: 90%;
+
+  border-radius: 25px;
+
+  box-shadow: 3px 10px 20px rgba(0, 0, 0, 0.5);
+
+  color: rgba(255, 255, 255, 0.814);
+  backdrop-filter: blur(16px) contrast(120%) saturate(120%);
+  transition-duration: 300ms;
+}
+
+.block-of-4 .text-holeder:hover {
+  background-color: rgba(255, 255, 255, 0.649);
+  color: black;
+  transition-duration: 300ms;
 }
 
 .block-of-4 .text-holeder h2 {
