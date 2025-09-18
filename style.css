@@ -309,9 +309,10 @@ h1:hover {
   flex-direction: row;
   gap: 30px;
 
-  background-color: rgba(177, 177, 177, 0.616);
+  background-color: rgba(143, 143, 143, 0.616);
   border-radius: 35px;
 }
+
 .container {
   display: flex;
   flex-direction: row;
@@ -422,9 +423,11 @@ h1:hover {
   border-radius: 40px;
 
   backdrop-filter: blur(5px) contrast(120%) saturate(120%);
+  transition-duration: 300ms;
 }
 
 .ground:hover .ground-img {
+  filter: brightness(90%);
   transition-duration: 300ms;
 }
 
