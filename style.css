@@ -11,7 +11,8 @@ body {
 
   font-family: "Libertinus Serif Display", serif;
 
-  background-color: #ececec;
+  /* background-color: #ececec; */
+  background-color: #d8d8d8;
 }
 
 /* .maket-form {
@@ -405,7 +406,7 @@ h1:hover {
 }
 
 .ground {
-  position: relative; /* важно для абсолютного позиционирования текста */
+  position: relative;
   background-color: gray;
   border-radius: 40px;
   width: 100%;
@@ -423,11 +424,6 @@ h1:hover {
   border-radius: 40px;
 
   backdrop-filter: blur(5px) contrast(120%) saturate(120%);
-  transition-duration: 300ms;
-}
-
-.ground:hover .ground-img {
-  filter: brightness(90%);
   transition-duration: 300ms;
 }
 
@@ -468,7 +464,7 @@ h1:hover {
   margin: 0;
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   body {
     background: #5c5c5c;
     color: white;
@@ -496,9 +492,16 @@ h1:hover {
 
   .info-box:hover {
     background-color: rgba(35, 35, 35, 0.864);
+    color: white;
   }
 
   h1 {
     color: rgba(86, 86, 86, 0.732);
   }
-} */
+
+  .block-of-4 .text-holeder:hover {
+    background-color: rgba(0, 0, 0, 0.649);
+    color: rgb(255, 255, 255);
+    transition-duration: 300ms;
+  }
+}
